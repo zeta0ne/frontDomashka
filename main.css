@@ -1,0 +1,61 @@
+* {
+    font-family: Nunito;
+}
+
+body{
+    background-image: linear-gradient(rgb(191, 210, 231), white);
+}
+
+h1 {
+    font-family: Comfortaa;
+    margin-top: 0;
+}
+
+#education,
+#education td, 
+#education th{
+    border: 1px solid gray; 
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#education tbody tr{
+    transition: background-color 4s;
+    background-color: white;
+}
+
+#education tbody tr:hover{
+    background-color: rgb(191, 210, 231);
+}
+
+.photo:hover{
+    animation-name: rotating;
+    animation-duration: 2s;
+}
+
+@keyframes rotating{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(720deg);}
+}
+
+button{
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 3px;
+    color: white;
+}
+
+p{
+    margin: 12px;
+}
+
+.page{
+    border: 1px solid gray;
+    padding: 20px;
+    margin: auto;
+    margin-top: 15px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    background-color: white;
+    width: fit-content;
+}

@@ -5,88 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме Junior Frontend Developer</title>
+    <link href="./main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h2>Вакансия: Junior Frontend Developer</h2>
+    <div class="page">
+        <h1>Вакансия: Junior Frontend Developer</h1>
     
-    <div style="display: inline-block;"><img src="https://i.imgur.com/y3w4JlU.jpeg" height=200px;></div>
-    <div style="display: inline-block; vertical-align: top;">
-        <p>Имя: Василиса Пупкина</p>
-        <p>Ссылка на репозиторий: <a href="github.com/vasilpupk">github.com/vasilpupk</a></p>
-        <p>Опыт работы: нет</p>
+        <div class="photo" style="display: inline-block;"><img src="https://i.imgur.com/y3w4JlU.jpeg" height=200px;></div>
+        <div style="display: inline-block; vertical-align: top;">
+            <p>Имя: Василиса Пупкина</p>
+            <p>Ссылка на репозиторий: <a href="github.com/vasilpupk">github.com/vasilpupk</a></p>
+            <p>Опыт работы: нет</p>
+        </div>
+        <form action="resume.html" method="post">
+            <div>    
+                <p>Дата собеседования: <input type="date"></p>
+                <p>Уровень английского:
+                <br>
+                <label><input type="radio" name="englishlvl">Плохо </label>
+                <label><input type="radio" name="englishlvl">Средне </label>
+                <label><input type="radio" name="englishlvl">Хорошо </label>
+                <label><input type="radio" name="englishlvl">Превосходно</label>
+                </p>
+                <p>Ключевые навыки:</p>
+                <ul style="margin: 0px;">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>...</li>
+                </ul>
+                <p><input type="text" placeholder="Введите навык..."><button>Добавить</button></p>
+                <p>Коммуникабельность:
+                    <select>
+                        <option>Выберите значение...</option>
+                        <option>Двух слов связать не может</option>
+                        <option>Ну вроде разговаривать умеет</option>
+                        <option>Командный работник</option>
+                        <option>Хороший тамада и конкурсы интересные</option>
+                        <option>Может примирить Израиль и Палестину</option>
+                    </select>
+                </p>
+                <p>Желаемая з/п:
+                    <input type="number" placeholder="Введите значение...">
+                </p> 
+                <p>
+                    Подходит по критериям:
+                    <br>
+                    <label><input type="checkbox">Знание английского</label>
+                    <label><input type="checkbox">Оклад</label>
+                    <label><input type="checkbox">Навыки</label>
+                    <label><input type="checkbox">Коммуникабельность</label>
+                </p>
+                <p>
+                    Образование и курсы:
+                <table id="education">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Наименование учебного заведения/курса</th>
+                            <th>Сроки обучения</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <td>1</td>
+                            <td>Институт брагородных девиц</td>
+                            <td>2014-2018</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Курсы повышения квалификации в работе с компиком</td>
+                            <td>2018-2018</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Курс Skillbox "Как стать фронтендером тратя 15 минут в день"</td>
+                            <td>2020-2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+            </div> 
+            <button type="submit">Отправить</button>
+        </form>  
     </div>
-    
-<div>    
-<p>Дата собеседования: <input type="date"></p>
-<p>Уровень английского:
-<br>
-<input type="radio" name="englishlvl">Плохо 
-<input type="radio" name="englishlvl">Средне 
-<input type="radio" name="englishlvl">Хорошо 
-<input type="radio" name="englishlvl">Превосходно
-</p>
-Ключевые навыки:
-<ul style="margin: 0px;">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>...</li>
-  </ul>
-  <br>
-<input type="text" placeholder="Введите навык..."><button>Добавить</button>
-<p>Коммуникабельность:
-    <select>
-        <option>Выберите значение...</option>
-        <option>Двух слов связать не может</option>
-        <option>Ну вроде разговаривать умеет</option>
-        <option>Командный работник</option>
-        <option>Хороший тамада и конкурсы интересные</option>
-        <option>Может примирить Израиль и Палестину</option>
-    </select>
-</p>
-
-<p>Желаемая з/п:
-    <input type="text" placeholder="Введите значение...">
-</p> 
-<p>
-    Подходит по критериям:
-    <br>
-    <input type="checkbox">Знание английского
-    <input type="checkbox">Оклад
-    <input type="checkbox">Навыки
-    <input type="checkbox">Коммуникабельность
-</p>
-
-<p>
-    Образование и курсы:
-<table style="border: 1px solid black; border-collapse: collapse;">
-    <thead style="border: 1px solid black; border-collapse: collapse;">
-        <tr>
-            <th>#</th>
-            <th style="border: 1px solid black; border-collapse: collapse;">Наименование учебного заведения/курса</th>
-            <th>Сроки обучения</th>
-        </tr>
-    </thead>
-    <tbody >
-        <tr>
-            <td style="border: 1px solid black; border-collapse: collapse;">1</td>
-            <td>Институт брагородных девиц</td>
-            <td style="border: 1px solid black; border-collapse: collapse;">2014-2018</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td style="border: 1px solid black; border-collapse: collapse;">Курсы повышения квалификации в работе с компиком</td>
-            <td>2018-2018</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; border-collapse: collapse;">3</td>
-            <td>Курс Skillbox "Как стать фронтендером тратя 15 минут в день"</td>
-            <td style="border: 1px solid black; border-collapse: collapse;">2020-2022</td>
-        </tr>
-    </tbody>
-</table>
-
-</p>
-</div>   
 </body>
 </html>
