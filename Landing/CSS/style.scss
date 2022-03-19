@@ -364,6 +364,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        cursor: pointer;
     }
     & .m{
         background-color: $background-dark-color;
@@ -405,8 +406,11 @@
             }
             & .start, .plan-name{
                 font-weight: 500;
-                color: $text-color-dark;
                 background-color: white;
+                color: $text-color-dark;
+                a{
+                    color: $text-color-dark;
+                }
             }
             & .list{
                 list-style-image: url("file:///C:/Users/dell/Desktop/frontDomashka/Landing/images/Vector-grey.png");
@@ -435,11 +439,14 @@
             border-radius: 10px;
             border-style: none;
             background-color: $background-dark-color;
-            color: $text-color-light;
             text-align: center;
             font-size: 18px;
             line-height: 18px;
             margin: 30px 0 30px 0;
+            a{
+                text-decoration: none;
+                color: $text-color-light;
+            }
         }
         & .list{
             list-style-image: url("file:///C:/Users/dell/Desktop/frontDomashka/Landing/images/Vector.png");

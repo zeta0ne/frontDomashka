@@ -619,6 +619,7 @@ header > .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .pricing .m {
@@ -676,8 +677,12 @@ header > .container {
 
 .pricing .price-card.dark .start, .pricing .price-card.dark .plan-name {
   font-weight: 500;
-  color: #171618;
   background-color: white;
+  color: #171618;
+}
+
+.pricing .price-card.dark .start a, .pricing .price-card.dark .plan-name a {
+  color: #171618;
 }
 
 .pricing .price-card.dark .list {
@@ -712,11 +717,15 @@ header > .container {
   border-radius: 10px;
   border-style: none;
   background-color: #121418;
-  color: white;
   text-align: center;
   font-size: 18px;
   line-height: 18px;
   margin: 30px 0 30px 0;
+}
+
+.pricing .price-card .start a {
+  text-decoration: none;
+  color: white;
 }
 
 .pricing .price-card .list {
