@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="./CSS/style.css" rel="stylesheet">
+    <link href="./CSS/hamburgers.css" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -31,9 +32,12 @@
                     <img src="./images/language.png" alt="k">
                     <img src="./images/avatar icon.png" alt="l">
                 </div>
-                <button class="mobile-only">burger</button>
-                
-                
+                <button class="mobile-only hamburger hamburger--squeeze" type="button" onclick="toggleBurger()">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                 
             </div>
         </header>
         <div class="home">
@@ -228,55 +232,12 @@
             <h2>Pricing to suit all sizes of Business</h2>
             <p class="grey-text">The high pricing of a premium product is used to enhance reinforce a product's. Examples of companies partake in premium pricing</p>
             <div class="subscription-box flex-container">
-                <div class="m">Monthly</div>
-                <div class="y">Yearly 
+                <div class="m" onclick="monthlyPrice()">Monthly</div>
+                <div class="y" onclick="yearlyPrice()">Yearly 
                     <div class="sale">Save 25%</div>
                 </div>
             </div>
-            <div class="pricing-cards flex-between">
-                <div class="price-card">
-                    <div class="plan-name">Basic</div>
-                    <h2>$25</h2>
-                    <p class="p-m">Per member, Per month</p>
-                    <button class="start">Get started</button>
-                    <div class="list">
-                        <ul>
-                            <li>Unlimited projects</li>
-                            <li>Sync across devices</li>
-                            <li>Sharing permission</li>
-                            <li>30 Days version history</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="price-card dark">
-                    <div class="plan-name">Standard</div>
-                    <h2>$75</h2>
-                    <p class="p-m">Per member, Per month</p>
-                    <button class="start">Get started</button>
-                    <div class="list">
-                        <ul>
-                            <li>Everything in free</li>
-                            <li>Sync across devices</li>
-                            <li>Share with 5 teams</li>
-                            <li>30 Days version history</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="price-card">
-                    <div class="plan-name">Basic</div>
-                    <h2>$25</h2>
-                    <p class="p-m">Per member, Per month</p>
-                    <button class="start">Get started</button>
-                    <div class="list">
-                        <ul>
-                            <li>Unlimited projects</li>
-                            <li>Sync across devices</li>
-                            <li>Sharing permission</li>
-                            <li>30 Days version history</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div class="pricing-cards flex-between"></div>
             
         </div>
     </main>
@@ -333,6 +294,6 @@
         </div>
     </footer>
     
-    <script src="./scripts.js"></script>
+    <script src="./common-stuff.js"></script>
 </body>
 </html>

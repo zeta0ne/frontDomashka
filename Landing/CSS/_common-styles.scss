@@ -102,19 +102,25 @@ header{
     header .container{ 
         height: 60px;
     }
-    header .navigation-container{
-        flex-direction: column;
-        background-color: blue;
-        position: absolute;
-        transform: translateX(100%);
-        transition: transform .2s ease-in-out;
-        right: 0;
-        top: 60px;
-        width: min-content;
-        padding: 15px 20px;
-        & .nav-link{
-            margin-left: 0;
-        }
+    header {
+        .navigation-container{
+            flex-direction: column;
+            background-color: blue;
+            position: absolute;
+            transform: translateX(100%);
+            transition: transform .2s ease-in-out;
+            right: 0;
+            top: 60px;
+            width: min-content;
+            padding: 15px 20px;
+
+            &.visible {
+                transform: translateX(0);
+            }
+             .nav-link{
+                margin-left: 0;
+            }
+    }
     }
     .home{
         height: 700px;

@@ -127,6 +127,10 @@ header > .container {
     width: min-content;
     padding: 15px 20px;
   }
+  header .navigation-container.visible {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   header .navigation-container .nav-link {
     margin-left: 0;
   }
