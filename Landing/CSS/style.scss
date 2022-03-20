@@ -291,6 +291,10 @@
                 position: absolute;
                 left: 215px;
                 top: 192px;
+                img{
+                    cursor: pointer;
+                }
+
             }
         }
         & .photo{
@@ -310,6 +314,9 @@
             width: 440px;
             height: 347px;
             padding: 50px;
+            .comment-wrapper.disabled{
+                display: none;
+            }
             & p{
                 margin: 0;
             }

@@ -529,6 +529,10 @@ header > .container {
   top: 192px;
 }
 
+.testimonials .rect .slider-container img {
+  cursor: pointer;
+}
+
 .testimonials .photo {
   position: absolute;
   left: 449px;
@@ -546,6 +550,10 @@ header > .container {
   width: 440px;
   height: 347px;
   padding: 50px;
+}
+
+.testimonials .client-says .comment-wrapper.disabled {
+  display: none;
 }
 
 .testimonials .client-says p {

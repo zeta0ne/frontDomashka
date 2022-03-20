@@ -7,33 +7,73 @@ function toggleBurger() {
 }
 
 const allCommentsData = [{
-    img: "./images/Ellipse 11.png",
-    star: "",
+    imgUrl: "./images/Ellipse 11.png",
+    starUrl: "./images/star.png",
     rating: 5,
     name: "Michel William",
     job: "CEO of Company",
     message: "I am very fortunate to trust my company to allies and now our income is increasing. We are try to added more services."
+},{
+    imgUrl: "./images/Background.png",
+    starUrl: "./images/star.png",
+    rating: 4,
+    name: "Wichel Milliam",
+    job: "Janitor",
+    message: "Wow this didn't suck"
+},{
+    imgUrl: "./images/Ellipse 11.png",
+    starUrl: "./images/star.png",
+    rating: 5,
+    name: "Kichel Zilliam",
+    job: "Courier",
+    message: "LOVE IT LOREM IPSUM!!!"
 }
-
 ]
 
+let counter = 0;
+
+const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
+
+arrowLeft.addEventListener('click', function(){
+    if (counter > 0){
+        counter--;
+        console.log('left');
+        console.log(counter);
+        placeForComment.innerHTML = createComment(allCommentsData[counter]);
+    }
+});
+arrowRight.addEventListener('click', function(){
+    if(counter < allCommentsData.length-1){
+        counter++;
+        console.log('right');
+        console.log(counter);
+        placeForComment.innerHTML = createComment(allCommentsData[counter]);
+    }
+});
+
+const placeForComment = document.querySelector('.comment-wrapper');
+//allCommentsData.forEach(item => placeForComment.innerHTML += createComment(item));
+
+placeForComment.innerHTML = createComment(allCommentsData[counter]);
+
 function createComment(commentData) {
-    return `<div class="text-wrapper">
-                <div class="first-row flex-between">
-                    <img src="${commentData.img}">
+    let stars = ``;
+    for(let i = 0; i<commentData.rating; i++){
+        stars += `<img src="${commentData.starUrl}">`;
+    }
+    return `<div class="first-row flex-between">
+                    <img src="${commentData.imgUrl}">
                     <div class="stars">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
+                        ${stars}
                     </div>
                 </div>
                 <p class="client-name">${commentData.name}</p>
                 <p class="grey-text job">${commentData.job}</p>
                 <p class="grey-text message">${commentData.message}</p>
-            </div>`
+            `
 }
+
 
 const allCardsData = [{
     planName: 'Basic',
