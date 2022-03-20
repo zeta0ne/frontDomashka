@@ -16,14 +16,14 @@ const allCommentsData = [{
 },{
     imgUrl: "./images/Background.png",
     starUrl: "./images/star.png",
-    rating: 4,
+    rating: 2,
     name: "Wichel Milliam",
     job: "Janitor",
     message: "Wow this didn't suck"
 },{
-    imgUrl: "./images/Ellipse 11.png",
+    imgUrl: "./images/Chel.png",
     starUrl: "./images/star.png",
-    rating: 5,
+    rating: 4,
     name: "Kichel Zilliam",
     job: "Courier",
     message: "LOVE IT LOREM IPSUM!!!"
@@ -41,6 +41,10 @@ arrowLeft.addEventListener('click', function(){
         console.log('left');
         console.log(counter);
         placeForComment.innerHTML = createComment(allCommentsData[counter]);
+        document.getElementById("comm-arrow-right").src="./images/right arrow active.png";
+        if (counter==0){
+            document.getElementById("comm-arrow-left").src="./images/left arrow inactive.png";
+        }
     }
 });
 arrowRight.addEventListener('click', function(){
@@ -49,6 +53,10 @@ arrowRight.addEventListener('click', function(){
         console.log('right');
         console.log(counter);
         placeForComment.innerHTML = createComment(allCommentsData[counter]);
+        document.getElementById("comm-arrow-left").src="./images/left arrow active.png";
+        if (counter == allCommentsData.length-1){
+            document.getElementById("comm-arrow-right").src="./images/right arrow inactive.png";
+        }
     }
 });
 
